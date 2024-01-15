@@ -1,5 +1,4 @@
 # Ignore all files by default, but scan all directories.
-*
 !*/
 
 # Do not ignore git files in the root of the repo.
@@ -9,9 +8,9 @@
 !/*.uproject
 
 # Do not ignore source, config and plugins dirs.
-!/Source/**
-!/Config/**
-!/Plugins/**
+!/Source/**/**
+!/Config/**/**
+!/Plugins/**/**
 
 # Only allow .uasset and .umap files from /Content dir.
 # They're tracked by git-lfs, don't forget to track other
@@ -49,3 +48,8 @@ Session.vim
 
 # Visual Studio
 .vs
+*.log
+
+# Others
+*.ini
+*Saved*
