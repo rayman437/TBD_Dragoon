@@ -1,5 +1,4 @@
 # Ignore all files by default, but scan all directories.
-!*/
 
 # Do not ignore git files in the root of the repo.
 !/.git*
@@ -15,8 +14,11 @@
 # Only allow .uasset and .umap files from /Content dir.
 # They're tracked by git-lfs, don't forget to track other
 # files if adding them here.
-!/Content/**/*.uasset
-!/Content/**/*.umap
+!Default_Level/Content/**/*.uasset
+!Default_Level/Content/**/*.umap
+/StarterContent/
+
+
 
 # Allow any files from /RawContent dir.
 # Any file in /RawContent dir will be managed by git lfs.
@@ -51,5 +53,6 @@ Session.vim
 *.log
 
 # Others
+*.log
+*/Saved/*
 *.ini
-*Saved*
